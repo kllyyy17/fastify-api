@@ -1,0 +1,30 @@
+### GET ALL EMPLOYEES
+GET http://localhost:5000/employees HTTP/1.1
+
+### GET A SINGLE EMPLOYEE
+GET http://localhost:5000/employees/1 HTTP/1.1
+
+### ADD AN EMPLOYEE
+POST http://localhost:5000/employees HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "New Employee",
+    "DOB": "New DOB",
+    "phone": "New Phone",
+    "address": "New Address"
+}
+
+### DELETE AN EMPLOYEE
+DELETE http://localhost:5000/employees/3 HTTP/1.1
+
+### UPDATE AN EMPLOYEE
+PUT http://localhost:5000/employees/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Updated Employee",
+    "DOB": "Updated DOB",
+    "phone": "Updated Phone",
+    "address": "Updated Address"
+}
